@@ -694,6 +694,10 @@ body {
     text-align: center;
 }
 
+.social__platform-item:hover{
+    opacity: .5;
+}
+
 .social__platform-item a{
     text-decoration: none;
     border-bottom: 6px solid #FF2C2C;
