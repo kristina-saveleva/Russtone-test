@@ -213,3 +213,9 @@
 {
     color: #FF2C2C;
 }
+
+@media (max-width: 1900px) {
+    .slick-dots{
+        left: 200px;
+    }
+}
