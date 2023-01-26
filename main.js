@@ -1,5 +1,5 @@
 $(function () {
-    $('.offer').slick({
+    $('.offer__box').slick({
         dots: true,
         infinite: true,
         speed: 500,
