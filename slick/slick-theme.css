@@ -215,7 +215,26 @@
 }
 
 @media (max-width: 1900px) {
-    .slick-dots{
+    .slick-dots {
         left: 200px;
+    }
+}
+
+@media (max-width: 1700px) {
+    .slick-dots {
+        left: 160px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .slick-dots {
+        left: 108px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slick-dots {
+        left: 20px;
+        width: 100%;
     }
 }
