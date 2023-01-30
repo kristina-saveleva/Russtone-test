@@ -617,17 +617,17 @@ body {
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
-    left: 45.9%;
+    left: calc(50% - 70px);
     transition: 0.3s;
-    top: 40.7%;
+    top: calc(50% - 70px);
 }
 
 .video-process a::after {
     content: '';
     cursor: pointer;
     position: absolute;
-    left: 49.2%;
-    top: 47.9%;
+    left: calc(50% - 8px);
+    top: calc(50% - 12px);
     border: 14px solid transparent;
     transition: 0.3s;
     border-left: 24px solid #FFFFFF;
@@ -949,7 +949,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 30px;
+    padding: 18px;
 }
 
 .menu {
@@ -1034,10 +1034,6 @@ body {
         right: 0;
     }
 
-    .video-process a::after {
-        left: 50.2%;
-    }
-
     .footer__inner {
         padding: 63px 62px 33px 56px;
     }
@@ -1103,11 +1099,6 @@ body {
         line-height: 31px;
     }
 
-    .video-process a::after {
-        left: 51.2%;
-        top: 47.9%;
-    }
-
     .header__wrapper {
         max-width: 870px;
     }
@@ -1130,10 +1121,6 @@ body {
     .offer__wrapper {
         width: 400px;
         padding-left: 108px;
-    }
-
-    .video-process a::after {
-        left: 53.2%;
     }
 
     .header__menu-catalog-item {
@@ -1162,6 +1149,10 @@ body {
         display: block;
     }
 
+    .header__menu{
+        margin-top: 0;
+    }
+
     .header__menu-item a {
         color: #151515;
     }
@@ -1175,11 +1166,7 @@ body {
     }
 
     .header__wrapper {
-        justify-content: end;
-    }
-
-    .video-process a::after {
-        left: 57.2%;
+        justify-content: space-between;
     }
 
     .top-nav {
@@ -1193,7 +1180,7 @@ body {
     .menu {
 		position: absolute;
         top: 0;
-        margin-top: 110px;
+        margin-top: 63px;
         left: 0;
         flex-direction: column;
         width: 100%;
@@ -1205,7 +1192,7 @@ body {
         background-color: #FF2C2C;
         display: flex;
         z-index: 4;
-        padding: 45px 0;
+        padding: 5px 0 25px 0;
 	}
 
 	.menu > li {
@@ -1240,8 +1227,8 @@ body {
         border: none;
         padding: 20px;
         color: #FFFFFF;
-        font-size: 25px;
-        width: 93%;
+        font-size: 17px;
+        width: 92%;
     }
 
     .header__search-button {
@@ -1261,7 +1248,7 @@ body {
 
     .header__search-box::placeholder {
         color: #FFFFFF;
-        font-size: 25px;
+        font-size: 17px;
     }
 
     .header__search-box:focus {
@@ -1279,18 +1266,18 @@ body {
         border-bottom: 1px solid #fff;
         width: 100%;
         margin: 0;
-        padding: 25px 0 10px 0;
     }
 
     .header__menu-catalog-item a {
         color: #FFFFFF;
-        font-size: 25px;
+        font-size: 17px;
+        display: block;
+        padding: 20px;
     }
 
     .header__menu-list {
         width: 100%;
         text-align: center;
-        margin: 20px 0 0 0;
         padding: 0;
     }
 
@@ -1298,25 +1285,26 @@ body {
         border-bottom: 1px solid #fff;
         width: 100%;
         margin: 0;
-        padding: 25px 0 10px 0;
     }
 
     .header__menu-item:nth-child(2) {
-        padding: 25px 0 10px 0;
+        padding: 0;
     }
 
     .header__menu-item:nth-child(3) {
-        padding: 25px 0 10px 0;
+        padding: 0;
     }
 
     .header__menu-item:nth-child(4) {
-        padding: 25px 0 10px 0;
+        padding: 0;
     }
 
     .header__menu-item a {
         color: #FFFFFF;
-        font-size: 25px;
+        display: block;
+        font-size: 17px;
         text-transform: uppercase;
+        padding: 20px;
     }
 
     .footer__support-question {
@@ -1372,6 +1360,19 @@ body {
     .popular-offers__products-list {
         margin-left: -20px;
     }
+
+    .header__logo {
+        margin-left: 18px;
+    }
+
+    .header__logo img {
+        height: 60px;
+
+    }
+
+    .header__menu-catalog{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -1400,10 +1401,6 @@ body {
 
     .popular-offers__product-item {
         padding: 32px 7px;
-    }
-
-    .video-process a::after {
-        left: 43.2%;
     }
 
     .video-process a::before {
