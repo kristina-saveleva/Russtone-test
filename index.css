@@ -1228,16 +1228,22 @@ body {
         padding: 20px;
         color: #FFFFFF;
         font-size: 17px;
-        width: 92%;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .header__search-button {
-        left: 0;
-        right: 30px;
+        top: calc(50% - 15px);
+        left: auto;
+        right: 15px;
+        margin-left: 0;
+        display: inline-flex;
+        position: absolute;
+        padding: 0;
     }
 
     .header__search-image {
-        margin: -18px 0 0 -29px;
+        margin: 0;
         width: 29px;
         height: 30px;
     }
@@ -1326,6 +1332,7 @@ body {
 
     .catalog__instruments-box {
         background-position-x: center;
+        background-size: cover;
     }
 
     .about svg {
@@ -1334,11 +1341,12 @@ body {
     }
 
     .about__subtitle {
-        width: 400px;
+        width: 100%;
     }
 
     .about__wrapper {
-        width: 400px;
+        width: 100%;
+        max-width: 400px;
     }
 
     .about__box {
@@ -1359,6 +1367,10 @@ body {
 
     .popular-offers__products-list {
         margin-left: -20px;
+    }
+
+    .popular-offers__product-item img{
+        width: 100%;
     }
 
     .header__logo {
