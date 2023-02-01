@@ -1013,6 +1013,121 @@ body {
 	transform: rotate(-405deg);
 } 
 
+.popup__question {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.popup__question .popup__question-content {
+    width: 80%;
+    overflow: auto;
+    padding: 50px;
+    background: white;
+    color: black;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+.popup__question .popup__question-content .close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 20px;
+    display: block;
+}
+
+.popup__question .popup__question-content .close span {
+    cursor: pointer;
+    position: fixed;
+    width: 20px;
+    height: 3px;
+    background: #151515;
+}
+
+.popup__question .popup__question-content .close span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.popup__question .popup__question-content .close span:nth-child(2) {
+    transform: rotate(135deg);
+}
+
+.popup__question-title{
+    font-size: 30px;
+    line-height: 32px;
+}
+
+.input-box {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+  
+.input-box input,
+.input-box textarea {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    border: none;
+    border-radius: 5px;
+    background: #f0f1f8;
+    padding: 0 20px;
+}
+
+.input-box textarea {
+    resize: none;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+}
+ 
+.message-box {
+    min-height: 110px;
+    margin-bottom: 35px;
+}
+
+.button-form {
+    display: inline-block;
+}
+
+.button-form input[type="button"] {
+    color: #fff;
+    font-size: 18px;
+    background: #3e2093;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    transition: 0.2s;
+}
+
+.form__popup-button{
+    border: 1px solid #070707;
+    color: #070707;
+}
+
+.form__popup-button:hover{
+    color: #FFFFFF;
+    background-color: #070707;
+}
+
+.button-form input[type="button"]:hover {
+    background: rgb(0, 0, 207);
+}
+
 @keyframes shake {
     100% {
       transform: translateX(1200px);    
@@ -1421,5 +1536,9 @@ body {
 
     .video__box {
         left: 16px;
+    }
+
+    .popup__question-title{
+        font-size: 19px;
     }
 }

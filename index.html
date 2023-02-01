@@ -36,7 +36,8 @@
                 <div class="header__search">
                     <input type="text" maxlength="12" placeholder="Поиск по сайту" class="header__search-box">
                     <button class="header__search-button">
-                        <svg class="header__search-image" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="header__search-image" width="20" height="21" viewBox="0 0 20 21" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M9.16667 16.0105C12.8486 16.0105 15.8333 13.0257 15.8333 9.34384C15.8333 5.66194 12.8486 2.67717 9.16667 2.67717C5.48477 2.67717 2.5 5.66194 2.5 9.34384C2.5 13.0257 5.48477 16.0105 9.16667 16.0105Z"
                                 stroke="#FF2C2C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -316,7 +317,31 @@
                         <a href="#">Пользовательское соглашение</a>
                     </li>
                 </ul>
-                <button class="footer__support-question">Задать вопрос</button>
+                <button class="footer__support-question button__popup">Задать вопрос</button>
+                <section class="popup__question">
+                    <div class="popup__question-content" id="popupQuestion">
+                        <div class="close">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <h2 class="popup__question-title">Хотите задать вопрос?</h2>
+                        <form id="questionForm" class="popup__question-form" action="#">
+                            <div class="input-box">
+                              <input type="text" placeholder="Ваше имя" />
+                            </div>
+                            <div class="input-box">
+                              <input type="text" placeholder="Введите email" />
+                            </div>
+                            <div class="input-box">
+                              <input type="text" placeholder="Введите телефон" />
+                            </div>
+                            <div class="input-box message-box">
+                              <textarea placeholder="Сообщение"></textarea>
+                            </div>
+                            <button class="button form__popup-button" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </section>
             </div>
         </div>
         <p class="footer__rights">© 2021 Russtone. Все права защищены.</p>
